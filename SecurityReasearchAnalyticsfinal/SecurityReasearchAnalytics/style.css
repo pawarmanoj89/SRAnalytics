@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+<style>
+body{   
+    background-color: #e7ebf2; font-family: arial; font-size: 12px;
+}
+.header{
+	margin:0 auto; width:780px;height:200px;border:1px solid #c3ccdf; border-bottom:3px solid #c3ccdf; border-radius:2px; background-color:#FFF; padding:10px;
+}
+time,.time{
+    font-size: 10px; color:gray; border-bottom: 1px solid #E7EBF2; min-width:350px; height:20px; padding-bottom: 5px;
+}
+#timeline{
+    width:800px; list-style-type: none; background: url(image/timeline.png) top center repeat-y; margin: 0 auto; padding:20px; margin-bottom:10px;
+}
+
+#timeline li{
+    width:375px; -moz-border-radius:2px; border-radius:2px; webkit-border-radius:2px; border:1px solid #c3ccdf; padding:5px;background-color:#FFF;
+}
+
+#timeline li:nth-of-type(odd){
+    clear: both;float:right; 
+}
+
+#timeline li:nth-of-type(odd), #timeline li:nth-of-type(even){
+    margin:-10px 0 20px 0;
+}
+#timeline li:nth-of-type(even) .corner{
+	position:absolute; display:block; margin-left:380px;width:20px;	height:15px;background:url(image/right.png);
+}
+#timeline li:nth-of-type(odd) .corner{
+	position:absolute;display:block;margin-left:-25px;width:20px;height:15px;background:url(image/left.png);
+}
+</style>

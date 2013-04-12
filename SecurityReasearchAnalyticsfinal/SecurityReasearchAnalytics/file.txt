@@ -1,0 +1,9 @@
+			
+			?>
+			
+			<script type="text/javascript">
+			setAllUsersId();
+			</script>
+			
+			<?php
+         <script src="script/script.js" type="text/javascript"></script>

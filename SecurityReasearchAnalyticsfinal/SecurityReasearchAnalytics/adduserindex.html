@@ -1,0 +1,24 @@
+<html>
+<head>
+<LINK href="style.css" rel="stylesheet" type="text/css">
+<script src="script/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="header">
+		<form id="mainform" action='adduser.php' method='post' onsubmit="return zeroLengthValidation(document.getElementById('srtext').value)">  
+			<table cellspacing="10px">
+				<tr><td>SR Username</td><td><input type="text" name="srtext" id="srtext" onchange=ckeckforuserdata(this.value)><span id="errname" style='color:RED' ></td></tr>
+				<p><span id="userlabel" name="userlabel"></span></p>
+				<tr><td>Facebook Username</td><td><input type="text" name="fbtext" id="fbtext"></td></tr>
+				<tr><td>Youtube Username</td><td><input type="text" name="yttext"></td></tr>
+				<tr><td>Mantisbug Username</td><td><input type="text" name="mbtext"></td></tr>
+				<tr><td>Bitbucket Username</td><td><input type="text" name="bbtext"></td></tr>
+				<tr><td colspan="2" align="center">
+				<input type="submit" name="submit" value="Submit" />
+				</td></tr>
+				</table>
+		</form>
+		</div>
+		<div id='timelinegraph'></div>
+</body>
+</html>
